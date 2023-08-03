@@ -150,6 +150,36 @@
         <div class="social_block footer__social_block"></div>
     </div>
 </footer>
+<div class="form_container">
+    <form action="" method="POST" class="main_form">
+        <div class="input_container">
+            <div class="rounded_input">
+                <label for="user_name">имя</label>
+                <input type="text" name="user_name" id="user_name" required>
+            </div>
+            <div class="rounded_input">
+                <label for="user_email">e-mail</label>
+                <input type="email" name="user_email" id="user_email" required>
+            </div>
+            <div class="rounded_input">
+                <label for="user_city">город</label>
+                <input type="text" name="user_city" id="user_city" required>
+            </div>
+            <div class="rounded_input">
+                <label for="user_phone">телефон</label>
+                <input type="number" name="user_phone" id="user_phone" required>
+            </div>
+            <span>Просим указывать номер телефона:
+                мобильный +7(код оператора)ХХХХХХХ
+            </span>
+            <div class="labels_container">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">я соглашаюсь с условиями политики конфиденциальности</label>
+            </div>
+            <button class="submit">готово</button>
+        </div>
+    </form>
+</div>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>

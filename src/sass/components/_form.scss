@@ -1,0 +1,70 @@
+.form_container{
+    display: grid;
+    grid-template-columns: 550px;
+    place-content: center;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(101, 101, 101, .8);
+}
+.main_form{
+    width: 100%;
+    height: 650px;
+    background: url('../../assets/images/form_bg.webp') no-repeat top center;
+    background-size: contain;
+    .input_container{
+        color: black;
+        margin: 190px auto 0;
+        padding: 0 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        place-items: center;
+        .rounded_input{
+            display: flex;
+            align-items: center;
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            height: 50px;
+            label{
+                flex-basis:30%;
+                text-transform: uppercase;
+                color: yellow;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: bold;
+            }
+            input{
+                flex-basis: 70%;
+                height: 100%;
+                border: 0;
+
+            }
+        }
+        .labels_container{
+            display: flex;
+        }
+        span{
+            width: 70%;
+            text-align: center;
+        }
+        .submit{
+            margin-top: 1rem;
+            width: 180px;
+            background-color: black;
+            border-radius: 10px;
+            overflow: hidden;
+            color: yellow;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+    }
+}
