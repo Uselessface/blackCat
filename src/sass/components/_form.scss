@@ -9,6 +9,10 @@
     right: 0;
     bottom: 0;
     background-color: rgba(101, 101, 101, .8);
+    visibility: hidden;
+}
+.form-open{
+    visibility: visible;
 }
 .main_form{
     width: 100%;
