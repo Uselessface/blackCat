@@ -77,7 +77,8 @@
                 </div>
                 <button data-product="" class="get_price product_get_price">Хочу прайс!</button>
             </div>
-            <div class="product"><img src="./assets/images/products/peanut_butter/peanut_butter_img.png" alt="" class="product__img">
+            <div class="product"><img src="./assets/images/products/peanut_butter/peanut_butter_img.png" alt=""
+                                      class="product__img">
                 <div class="product__info">
                     <h3 class="product__name">Арахисовая паста</h3>
                     <p class="product__info_text">Питательный, сытный и очень полезный для здоровья продукт, заряжающий
@@ -129,7 +130,8 @@
                 </div>
                 <button data-product="" class="get_price product_get_price">Хочу прайс!</button>
             </div>
-            <div class="product"><img src="./assets/images/products/sour_rice/sour_rice.png" alt="" class="product__img">
+            <div class="product"><img src="./assets/images/products/sour_rice/sour_rice.png" alt=""
+                                      class="product__img">
                 <div class="product__info">
                     <h3 class="product__name">ВОЗДУШНЫЙ РИС
                         В КИСЛО-СЛАДКОЙ ГЛАЗУРИ</h3>
@@ -151,7 +153,9 @@
             <div class="product"><img src="./assets/images/products/tablet/tablet_img.png" alt="" class="product__img">
                 <div class="product__info">
                     <h3 class="product__name">ПОДСТАВКИ ДЛЯ ТЕЛЕФОНОВ И КНИГ</h3>
-                    <p class="product__info_text">Серия состоит из 8 подставок с авторскими иллюстрациями. Красочные персонажи, мотивирующие надписи и милые послания поднимут настроение и настроят на рабочий лад. В наших подставках продуманно все – легкая сборка, экологичный материал...</p>
+                    <p class="product__info_text">Серия состоит из 8 подставок с авторскими иллюстрациями. Красочные
+                        персонажи, мотивирующие надписи и милые послания поднимут настроение и настроят на рабочий лад.
+                        В наших подставках продуманно все – легкая сборка, экологичный материал...</p>
                 </div>
                 <div class="product__bullets product__bullets-2img">
                     <img src="./assets/images/products/tablet/bage1.png" class="product_bullets__img" alt="">
@@ -169,16 +173,22 @@
 <footer>
     <div class="container">
         <div class="logo logo_footer">
-            <img src="" alt="" class="logo__image">
+            <img src="./assets/images/footer-logo.webp" alt="" class="logo__image">
         </div>
-        <button class="get_price get_price_footer">
+        <button class="get_price_footer">
       <span class="color_yellow">
-      хочу прайс
-        <br>
-        и погладить пузико кота
+        <span class="get_price_footer-first-line">хочу прайс!</span>
+        <span class="get_price_footer-second-line">И погладить пузико кота</span>
     </span>
         </button>
-        <div class="social_block footer__social_block"></div>
+        <div class="social_block footer__social_block">
+            <img src="./assets/images/vk-icon.webp" alt="">
+            <div class="social_block__links">
+                <a href="" class="social_block__link_item">+7 909 063-63-63</a>
+                <a href="" class="social_block__link_item">+7 (3412) 906-506</a>
+                <a href="" class="social_block__link_item">zakaz@prod.art</a>
+            </div>
+        </div>
     </div>
 </footer>
 <div class="form_container">
@@ -212,6 +222,7 @@
         </div>
     </form>
 </div>
+
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
@@ -221,15 +232,15 @@
     const FormOverlay = document.querySelector('.form_container')
     const Form = document.querySelector('.main_form')
     const HiddenInput = document.querySelector('.hidden-input')
-    Buttons.forEach(element=>{
-        element.addEventListener('click', ()=>{
+    Buttons.forEach(element => {
+        element.addEventListener('click', () => {
             FormOverlay.classList.add('form-open')
             HiddenInput.setAttribute('data-product', element.getAttribute('data-product'))
         })
     })
-    FormOverlay.addEventListener('click', (e)=>{
+    FormOverlay.addEventListener('click', (e) => {
         const withinBoundaries = e.composedPath().includes(Form)
-        if(! withinBoundaries){
+        if (!withinBoundaries) {
             FormOverlay.classList.remove('form-open')
         }
     })
