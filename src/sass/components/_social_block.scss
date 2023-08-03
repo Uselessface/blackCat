@@ -1,0 +1,19 @@
+.social_block{
+  display: flex;
+  place-items: center;
+  gap: 0.7rem;
+  font-family: 'Gilroy';
+  &__logo{
+    background-color: #fdd826;
+    padding-inline: 0.5rem;
+    padding-block: 0.8rem;
+    border-radius: 4px;
+  }
+  &__link_item{
+    display: block;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  url(../../assets/fonts/Gilroy-Bold.woff2) format('woff2'),
+  url(../../assets/fonts/Gilroy-Bold.woff) format('woff'),
+  url(../../assets/fonts/Gilroy-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url(../../assets/fonts/Gilroy-Regular.woff2) format('woff2'),
+  url(../../assets/fonts/Gilroy-Regular.woff) format('woff'),
+  url(../../assets/fonts/Gilroy-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boozy';
+  src: local('Boozy'), local('Boozy'),
+  url(../../assets/fonts/BOOZY.woff2) format('woff2'),
+  url(../../assets/fonts/BOOZY.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

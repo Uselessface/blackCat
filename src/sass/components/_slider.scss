@@ -1,0 +1,17 @@
+.sliding_cats{
+  background: url(../../assets/images/karusel_kotik.webp) repeat-x;
+  animation: clouds 200000s linear infinite;
+  height: 250px;
+  background-size: cover;
+  padding-bottom: 10px;
+  position: relative;
+  top: 2rem;
+}
+@keyframes clouds {
+  0% {
+    background-position: 10000000px 0;
+  }
+  100% {
+    background-position: 0 0 ;
+  }
+}

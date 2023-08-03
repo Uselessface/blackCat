@@ -1,0 +1,11 @@
+@forward "../components/product";
+
+
+.product_list {
+  padding-top: 9.375rem;
+  > .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.188rem;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../sass/_normalize.scss";
+@use "../sass/misc/_fonts.scss";
+@use "../sass/layout";
+@use "../sass/components";
+
+body{
+  background-color: black;
+  background-image: url('../assets/images/body_bg.webp');
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Gilroy';
+}
+section{
+  margin: 0 auto;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 .5rem;
+}
+.color_yellow{
+  color: #fdd826;;
+}
