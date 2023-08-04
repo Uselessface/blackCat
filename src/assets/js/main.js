@@ -23,6 +23,8 @@ FormOverlay.addEventListener('click', (e) => {
     }
 })
 
+
+
 window.onload = function() {
     // Parse the URL
     function getParameterByName(n) {
@@ -43,5 +45,10 @@ window.onload = function() {
     document.querySelector('input[name="utm_campaign"]').value = campaign;
     document.querySelector('input[name="utm_term"]').value = term;
 
+    $('.product__info_text').elimore({
+        maxLength: 395,
+        moreText: "Показать полностью...",
+        lessText: "Скрыть"
+    });
 }
 
