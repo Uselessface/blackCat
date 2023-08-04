@@ -11,6 +11,9 @@
   border: none;
   position: relative;
   margin-bottom: 1rem;
+  @media screen and (max-width: 768px){
+    width: 90%;
+  }
   .color_yellow{
     line-height: 25px;
   }

@@ -5,8 +5,19 @@
   padding-top: 9.375rem;
   > .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     column-gap: 4.188rem;
-    row-gap: 8rem;
+    row-gap: 10rem;
+    place-content: center;
+    @media screen and (max-width: 768px){
+      grid-template-columns: .7fr;
+      column-gap: 0;
+      row-gap: 12rem;
+      place-content: center;
+    }
+    @media screen and (max-width: 350px) {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
   }
 }

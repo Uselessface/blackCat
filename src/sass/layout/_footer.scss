@@ -6,11 +6,18 @@ footer{
   background-size: 100% 150px;
   display: flex;
   align-items: flex-end;
-
+  @media screen and (max-width: 768px) {
+    height: 350px;
+    background-size: cover;
+  }
   .container{
     margin-top: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
   }
   .get_price{
     box-shadow: none;
@@ -20,11 +27,19 @@ footer{
   }
   .social_block{
     justify-self: end;
+    @media screen and (max-width: 768px) {
+      justify-self: center;
+    }
     &__logo{
       background: url("../assets/images/vk-icon.webp") top center no-repeat;
     }
     &__link_item {
       color: #000000;
+    }
+  }
+  .logo{
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 }

@@ -11,12 +11,19 @@ header{
     @media screen and (max-width: 1200px){
       background-position: 20px top;
     }
+    @media screen and (max-width: 768px){
+      background-image: none;
+    }
   }
   .header_info{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 1rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      place-items: center;
+    }
     .info_text{
       font-size:clamp(1.3rem,2.5vw,2rem);
       font-weight: bold;
