@@ -1,0 +1,29 @@
+.get_price_footer{
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 45px 0 0 0;
+  width: 450px;
+  height: 120px;
+  background: url("../../assets/images/cats-sleep.webp") no-repeat center center;
+  background-size: 100% 120px;
+  outline: none;
+  border: none;
+  position: relative;
+  margin-bottom: 1rem;
+  .color_yellow{
+    line-height: 25px;
+  }
+  .get_price_footer-first-line{
+    display: block;
+    text-transform: uppercase;
+    box-sizing: content-box;
+  }
+  .get_price_footer-second-line{
+    display: block;
+    color: white;
+    font-size: 0.8rem;
+    box-sizing: content-box;
+
+  }
+}

@@ -1,0 +1,24 @@
+footer{
+  position: relative;
+  margin-top: 10rem;
+  height: 250px;
+  background: url("../../assets/images/footer-bg.webp") no-repeat bottom center;
+  background-size: 100% 150px;
+  display: flex;
+  align-items: flex-end;
+
+  .container{
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .social_block{
+    justify-self: end;
+  }
+  .social_block__link_item{
+    color: #000000;
+  }
+}
+.logo_footer{
+  align-self: end;
+}
