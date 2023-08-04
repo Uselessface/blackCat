@@ -1,0 +1,46 @@
+.after_form{
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  &__header{
+    background: url("../assets/images/after_form__header_bg.webp") top center no-repeat;
+    .container{
+      background: none;
+    }
+  }
+  .pet_the_cat{
+    background: url("../assets/images/white_bg.webp") no-repeat top center;
+    margin: 2rem auto 0;
+    cursor: none;
+    &:hover{
+      .cursor{
+        visibility: visible;
+      }
+    }
+    .cursor {
+      visibility: hidden;
+      height: 200px;
+      width: 175px;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      background: url("../assets/images/hand_cursor.gif") no-repeat center;
+    }
+    img{
+      display: block;
+      width: 100%;
+      max-width: 550px;
+      margin: 30px auto;
+    }
+  }
+
+  .yellow_sign{
+    position: absolute;
+    right: 150px;
+    @media screen and (max-width: 1360px){
+      right: 20px;
+    }
+  }
+}

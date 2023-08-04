@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Blac Cat - Вкусные подарки">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <title>Black Cat - Вкусные подарки</title>
+</head>
+<body>
+<header class="after_form__header">
+  <div class="container">
+    <section class="header_info">
+      <a href="/" class="logo logo_header">
+        <img src="assets/images/logo.webp" alt="" class="logo__image">
+      </a>
+      <h2 class="info_text color_yellow">вкусные и корпоративные подарки</h2>
+      <div class="social_block header__social_block">
+        <a target="_blank" href="https://vk.com/prod_art" class="social_block__logo"></a>
+        <div class="social_block__links">
+          <a href="tel:+79090636363" class="social_block__link_item">+7 909 063-63-63</a>
+          <a href="tel:+73412906506" class="social_block__link_item">+7 (3412) 906-506</a>
+          <a href="mailto:zakaz@prod.art" class="social_block__link_item">zakaz@prod.art</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
+<main class="after_form">
+  <div class="container">
+    <h5>
+      Спасибо за интерес и доверие, проявленное к нашей продукции.
+      В течение 5 минут тебе на почту придёт письмо с актуальным прайсом.
+    </h5>
+    <h5>
+      Если не пришло, то ищи его в папке «<span class="color_yellow">СПАМ</span>».
+    </h5>
+    <img src="assets/images/yellow_sign.webp" alt="вывеска" class="yellow_sign">
+    <div class="pet_the_cat">
+      <div class="cursor"></div>
+      <img src="assets/images/Animatsia-kotik.gif" alt="">
+    </div>
+  </div>
+</main>
+<!--<footer>
+  <div class="container">
+    <div class="logo logo_footer">
+      <img src="./assets/images/footer-logo.webp" alt="" class="logo__image">
+    </div>
+    <button class="get_price get_price_footer">
+      <span class="color_yellow">
+        <span class="get_price_footer-first-line">хочу прайс!</span>
+        <span class="get_price_footer-second-line">И погладить пузико кота</span>
+    </span>
+    </button>
+    <div class="social_block footer__social_block">
+      <a target="_blank" href="https://vk.com/prod_art" class="social_block__logo"></a>
+      <div class="social_block__links">
+        <a href="tel:+79090636363" class="social_block__link_item">+7 909 063-63-63</a>
+        <a href="tel:+73412906506" class="social_block__link_item">+7 (3412) 906-506</a>
+        <a href="mailto:zakaz@prod.art" class="social_block__link_item">zakaz@prod.art</a>
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+<script>
+  // custom cursor on a cat
+  const cursor = document.querySelector(".cursor");
+  const mouseMove = function (e) {
+    let x = e.clientX;
+    let y = e.clientY;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+  };
+  document.addEventListener("mousemove", mouseMove);
+</script>
+</body>
+</html>
