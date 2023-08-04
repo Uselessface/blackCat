@@ -1,5 +1,5 @@
 @use "../sass/_normalize.scss";
-@use "../sass/misc/_fonts.scss";
+@use "../sass/misc";
 @use "../sass/layout";
 @use "../sass/components";
 
@@ -8,7 +8,7 @@ body{
   background-image: url('../assets/images/body_bg.webp');
   color: white;
   overflow-x: hidden;
-  font-family: 'Gilroy';
+  font-family: 'Gilroy',sans-serif;
 }
 section{
   margin: 0 auto;
@@ -19,6 +19,4 @@ section{
   margin: 0 auto;
   padding: 0 .5rem;
 }
-.color_yellow{
-  color: #fdd826;;
-}
+

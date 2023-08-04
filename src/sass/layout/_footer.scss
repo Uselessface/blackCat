@@ -12,11 +12,20 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .get_price{
+    box-shadow: none;
+    &:hover{
+      box-shadow: none;
+    }
+  }
   .social_block{
     justify-self: end;
-  }
-  .social_block__link_item{
-    color: #000000;
+    &__logo{
+      background: url("../../assets/images/vk-icon.webp") top center no-repeat;
+    }
+    &__link_item {
+      color: #000000;
+    }
   }
 }
 .logo_footer{
