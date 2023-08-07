@@ -10,7 +10,7 @@
     row-gap: 10rem;
     align-items: start;
     justify-content: center;
-    @media screen and (max-width: 1200px ){
+    @media screen and (max-width: 1200px) and(min-width: 769px){
       grid-template-columns: repeat(3, 1fr);
     }
     @media screen and (max-width: 768px){
