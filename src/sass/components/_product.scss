@@ -7,6 +7,11 @@
   padding: 0 2rem;
   position: relative;
   min-height: 0;
+  display: grid;
+  @media screen and (min-width:1200px){
+    min-height: 800px;
+  }
+
   &__img{
     display: inline-block;
     position: absolute;
@@ -49,7 +54,6 @@
     .product_bullets__img{
       display: block;
       width: 100%;
-      height: 116px;
     }
   }
   .product__bullets-2img{
@@ -69,6 +73,7 @@
     overflow: hidden;
     white-space: nowrap;
     margin-bottom: 3rem;
+    max-height: 25px;
     .product__meta__item{
       text-align: center;
       white-space: nowrap;
