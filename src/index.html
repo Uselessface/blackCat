@@ -640,7 +640,7 @@
         <div class="input_container">
             <div class="rounded_input">
                 <label class="color_yellow" for="user_name">имя</label>
-                <input type="text" name="user_name" id="user_name" required>
+                <input type="text"  name="user_name" id="user_name" required>
             </div>
             <div class="rounded_input">
                 <label class="color_yellow" for="user_email">e-mail</label>
@@ -652,7 +652,7 @@
             </div>
             <div class="rounded_input">
                 <label class="color_yellow" for="user_phone">телефон</label>
-                <input type="number" name="user_phone" id="user_phone" required>
+                <input type="number" name="user_phone" id="user_phone" placeholder="+7(XXX)XXXXXXX" required>
             </div>
             <span>Просим указывать номер телефона:
                 мобильный +7(код оператора)ХХХХХХХ
@@ -666,8 +666,9 @@
             <input type="hidden" name="utm_medium">
             <input type="hidden" name="utm_campaign">
             <input type="hidden" name="utm_term">
+            <input type="checkbox" name="" id="bot_check" style="display: none">
             <button
-                    onclick="ym(94448889,'reachGoal','otpravka_formi'); return true;"
+                    onclick="ym(94448889,'reachGoal','otpravka_formi');"
                     type="submit"
                     class="submit color_yellow">готово
             </button>
