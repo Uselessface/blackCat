@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <title>Prod.art - Продукт как искусство!</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+	    /* What it does: Hover styles for buttons */
+	    .button-td,
+	    .button-a {
+	        transition: all 150ms ease-in;
+        }
+        
+        .button-td-primary,
+	    .button-a-primary {
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+            border-color: #555555 !important;
+            top: 1px;
+            right: -1px;
+        }
+
+	    .button-a-blue:hover {
+            background: #1A3763 !important;
+            box-shadow: 0px 0px #1A3763 !important;
+        }
+
+        .button-a-pink:hover {
+            background: #7D4655 !important;
+            box-shadow: 0px 0px #7D4655 !important;
+        }
+
+        .button-a-yellow:hover {
+            background: #7D5D16 !important;
+            box-shadow: 0px 0px #7D5D16 !important;
+        }
+
+        .button-td-circle:hover,
+        .button-a-circle:hover {
+            border-color: transparent !important;
+        }
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #ffffff;">
+	<center style="width: 100%; background-color: #ffffff;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff;">
+    <tr>
+    <td>
+    <![endif]-->
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+        -->
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background-image: url(http://prod.art/assets/images/letter/letter_bg.png);">
+                <!-- Hero Image, Flush : BEGIN -->
+                <tr>
+                    <td style="padding: 20px 0 0 0 ;">
+                        <img src="https://prod.art/assets/images/letter/header.png" width="500"  alt="Header Image" border="0" style="width: 100%; max-width: 500px; height: auto;font-family: sans-serif; font-size: 16px; line-height: 16px; color: #FFFFFF; margin: auto; display: block;" class="g-img">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://prod.art/assets/images/letter/logo.png" width="250" alt="Logo" border="0" style="width: 100%; max-width: 250px; height: auto;font-family: sans-serif; font-size: 16px; line-height: 16px; color: #FFFFFF; margin: auto; display: block;padding: 20px 0 0 0 ;" class="g-img">
+                    </td>
+                </tr>
+                <!-- Hero Image, Flush : END -->
+
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr>
+                    <td>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 15px 0 0 0;">
+                                    <img src="https://prod.art/assets/images/letter/greeting.png" width="100" height="auto" alt="Добрый день" border="0" style="width: 100%; max-width: 100px; height: auto; font-family: sans-serif; font-size: 16px; line-height: 16px; color: #FFFFFF; margin: auto; display: block;" class="g-img">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 20px; font-family: sans-serif; font-size: 17px; line-height: 20px; color: #ffffff; font-style: italic;"> 
+                                    <p style="margin: 0; text-align: center;">
+                                        У тебя хороший вкус! 
+                                        Молодец,что обратил на нас внимание.
+                                        Наши чёрные котики очень обрадовались твоей заявке и лапками выслали это письмо (они старались).
+                                        Самые внимательные найдут прайс и интернет-мургазин.
+                                    </p>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- 1 Column Text + Button : END -->
+
+                <!-- Hero Image, Flush : BEGIN -->
+                <tr>
+                    <td>
+                        <img src="https://prod.art/assets/images/letter/hero_cat.png" width="500" height="262" alt="" border="0" style="width: 100%; max-width: 500px; height: auto; font-family: sans-serif; font-size: 16px; line-height: 16px; color: #000000; margin: auto; display: block;" class="g-img">
+                    </td>
+                </tr>
+                <!-- Hero Image, Flush : END -->
+                <!-- Advantages : BEGIN -->
+                <tr>
+                    <td style="padding: 20px 0 0 0 ;">
+                        <img src="https://prod.art/assets/images/letter/cat_bullets.png" width="600" height="auto" alt="Сотрудничать с нами выгодно!" border="0" style="width: 100%; max-width: 600px; height: auto; font-family: sans-serif; font-size: 16px; line-height: 16px; color: #000000; margin: auto; display: block;" class="g-img">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 10px 30px; font-family: sans-serif; font-size: 16px; line-height: 20px; color: #FFFFFF;">
+                                    
+                                    <p style="margin: 0; text-align: center;">
+                                        <span style="color: #fdd826; font-weight: bold;">Креативная и амбициозная семейка</span> - лучшие иллюстраторы, управленцы
+                                        и менеджеры. Мы собрались вместе, чтоб создавать вкусняшки, которые меняют
+                                        мир. О нас говорят и нас пытаются копировать! <span style="color: #fdd826; font-weight: bold;">Мы придумываем и создаём</span>
+                                        вкусные подарки так, чтоб твои покупатели не задумывались что подарить,
+                                        а могли сосредоточиться на главном – на эмоциях. Для нас нет разницы
+                                        государственный праздник или личный повод, мы легко подстраиваемся под
+                                        аудиторию и создаём продукцию, которая попадает в ТОП. Мы не делаем
+                                        "как у всех", <span style="color: #fdd826; font-weight: bold;">мы задаём тренды и обеспечиваем постоянный спрос.</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Advantages : END -->
+                
+                <!-- Buttons : BEGIN -->
+                <tr>
+                    <td style="padding: 30px 0px 0px 0px;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align: center;">
+                            <tr>
+                                <td valign="center" width="45%">
+                                    <a href="https://drive.google.com/drive/folders/175i1e8bKsCWOSMNm3lcuDItGIFqj4CaJ?usp=sharing" target="_blank" download>
+                                        <div style="width: 100%; max-width: 200px; height: 60px; background: #fdd826;text-transform: uppercase; font-family: sans-serif;box-sizing: border-box; font-size: 20px; font-weight: bold; padding: 20px 0 0 0; line-height: 16px; color: #000000; margin: auto; display: inline-block; border-radius: 10px;"><span>скачать прайс</span></div>
+                                    </a>
+                                </td>
+                                <td valign="center" width="45%">
+                                    <a href="https://bc.gifts" target="_blank">
+                                        <div style="width: 100%; max-width: 200px; height: 60px; background: #fdd826; font-family: sans-serif;text-transform: uppercase; box-sizing: border-box; font-size: 18px;padding: 10px 0 0 0;font-weight: bold; line-height: 20px; color: #000000; margin: auto; display: inline-block; border-radius: 10px;"><span>перейти в интернет магазин</span></div>
+                                    </a>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Buttons : END -->
+
+                <tr>
+                    <td style="padding: 30px 0 0 0;">
+                    </td>
+                </tr>
+                <!-- Footer : BEGIN -->
+                <tr>
+                    <td style="background-image: url('https://prod.art/assets/images/letter/footer_bg.png'); background-repeat: no-repeat; height: 220px">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 12px 0px 12px 0; text-align: center; font-size: 16px;">
+                                    <img src="https://prod.art/assets/images/letter/footer_header.png" alt="Наши менеджеры знают ответы на все ваши вопросы, а также помогут составить заказ:">
+                                </td>
+                            </tr>
+                        </table>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="400px">
+                            <tr>
+                                <td style="padding: 5px 10px 5px 45px; width: 140px; height: 30px; background-image: url('https://prod.art/assets/images/letter/mail.png'); background-position: left center; background-size: 35px 35px; background-repeat: no-repeat;">
+                                    <a style="display: block; text-align: left; font-family: sans-serif; font-size: 16px; line-height: 23px; color: #000000; font-weight: bold;" href="mailto:zakaz@prod.art">zakaz@prod.art</a>
+                                </td>
+                                <td style="padding: 5px 10px 5px 45px; width: 170px; height: 30px; background-image: url('https://prod.art/assets/images/letter/phone.png'); background-position: left center; background-size: 35px 35px;background-repeat: no-repeat;">
+                                    <a style="display: block;text-align: left; font-family: sans-serif; font-size: 16px; line-height: 23px; color: #000000; font-weight: bold;" href="tel:+79090636363">+7 909 063-63-63</a>
+                                    <a style="display: block;text-align: left; font-family: sans-serif; font-size: 16px; line-height: 23px; color: #000000; font-weight: bold;" href="tel:+7341290506">+7 (3412) 906-506</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px 10px 5px 45px; width: 140px; height: 30px; background-image: url('https://prod.art/assets/images/letter/vk.png'); background-position: left center; background-size: 35px 35px; background-repeat: no-repeat;">
+                                    <a style="display: block;text-align: left; font-family: sans-serif; font-size: 16px; line-height: 23px; color: #000000; font-weight: bold;"href="vk.com/prod.art">vk.com/prod.art</a>
+                                </td>
+                                <td style="padding: 5px 10px 5px 45px; width: 170px; height: 30px; background-image: url('https://prod.art/assets/images/letter/site.png'); background-position: left center; background-size: 35px 35px;background-repeat: no-repeat;">
+                                    <a style="display: block;text-align: left; font-family: sans-serif; font-size: 16px; line-height: 23px; color: #000000; font-weight: bold;" href="https://prod.art/">prod.art</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Footer : END -->
+            </table>
+            <!-- Email Body : END -->
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>
