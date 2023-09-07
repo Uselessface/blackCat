@@ -1,15 +1,15 @@
 const Buttons = document.querySelectorAll('[data-product]')
 const FormOverlay = document.querySelector('.form_container')
-const Form = document.querySelector('.main_form')
-const OpeningButtons = document.querySelectorAll('.get_price')
+const Form = document.querySelector('.main_form');
+const OpeningButtons = document.querySelectorAll('.get_price');
 const form = document.querySelector('.main_form');
 const user_name = document.querySelector('#user_name');
 const user_city = document.querySelector('#user_city');
 const user_checked = document.querySelector('#check');
-const bot_check = document.querySelector('#bot_check')
+const bot_check = document.querySelector('#bot_check');
 const user_phone = document.querySelector('#user_phone');
-const ProductInput = document.querySelector('.hidden-input')
-
+const ProductInput = document.querySelector('.hidden-input');
+const productInfoList = document.querySelectorAll('.product__info_text');
 
 window.onload = function() {
 
