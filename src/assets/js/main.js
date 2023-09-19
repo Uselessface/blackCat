@@ -10,6 +10,7 @@ const bot_check = document.querySelector('#bot_check');
 const user_phone = document.querySelector('#user_phone');
 const ProductInput = document.querySelector('.hidden-input');
 const productInfoList = document.querySelectorAll('.product__info_text');
+const user_email = document.querySelector('#user_email');
 
 window.onload = function() {
 
@@ -61,6 +62,8 @@ window.onload = function() {
         const phone_val = user_phone.value;
         const user_checked_val = user_checked.checked;
         const bot_checked_val = bot_check.checked;
+        const product_val = ProductInput.value;
+        const email_val = user_email.value;
 
         // Проверяем, что поля заполнены
         if (!user_val || !city_val || !phone_val || !user_checked_val) {
@@ -69,7 +72,7 @@ window.onload = function() {
         }
 
         // Проверяем, что имя пользователя содержит только буквы и цифры
-        if ((!isValidValue(user_val)) || (!isValidValue(city_val))) {
+        if ((!isValid(user_val)) || (!isValid(city_val))) {
             alert('Поле может содержать только буквы русского алфавита и только два слова');
             return;
         }
@@ -80,10 +83,31 @@ window.onload = function() {
         }
 
         // Если всё в порядке, отправляем форму
+        var ct_site_id = '62060';
+        var ct_data = {             
+            name: user_val,
+            phonenumber: phone_val,
+            productneed: product_val,
+            cityname: city_val,
+            usermail: email_val,
+            subject: 'Заявка с сайта',
+            sitelocation: location.host,
+            requestUrl: location.href,
+            sessionId: window.ct('calltracking_params','hj1zshv4').sessionId 
+        };
+        jQuery.ajax({  
+            async:false,
+            url: 'https://api.calltouch.ru/calls-service/RestAPI/requests/'+ct_site_id+'/register/',      
+            dataType: 'json',         
+            type: 'POST',          
+            data: ct_data
+        });  
         form.submit();
     });
 
-    function isValidValue(value) {
+
+
+    function isValid(value) {
         // Проверка имени регулярным выражением
         const pattern = /^[A-ЯЁа-яё]+\s?[A-ЯЁа-яё]+$/g;
         return pattern.test(value);
